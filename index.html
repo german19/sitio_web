@@ -20,22 +20,28 @@
 	</header>
 	<!-- main>figure>img[src="#" alt="Text alt" width=960 height=320]+legend{Texto de la imagen} -->
 	<main id="contenido">
-		<form action="#">
-			<label for="">Usuario</label>
-			<input type="text" name="txtusuario" id="txtusuario">
-			<label for="">Contraseña</label>
-			<input type="password" name="txtpassword" id="txtpassword">
-			<a href="lost.html">¿Olvido su Contraseña?</a>
-			<label>
-				Mantener sesion iniciada<input type="checkbox" name="remember" id="remember">
-			</label>
-			<button type="submit">Iniciar sesion</button>
-		</form>
+		<div id="login-form">
+            <form action="#">
+               <div>
+                    <label for="txtusuario" class="negrita">Usuario</label> <br>
+                   <input type="text" name="txtusuario" id="txtusuario" class="input">
+               </div>
+               <div> 
+                   <label for="txtpassword" class="negrita">Contraseña</label> <br>
+                   <input type="password" name="txtpassword" id="txtpassword" class="input">       
+              </div>      
+                <label>
+                    Mantener sesion iniciada<input type="checkbox" name="remember" id="remember">
+                </label>
+                <button type="submit">Iniciar sesion</button>
+            </form>
+              <a href="lost.html">¿Olvido su Contraseña?</a>
+        </div>
 	</main>
 	<!-- footer>hr+p{Todos los derechos reservados &copy; 2017} -->
 	<footer id="pie">
 		<hr>
-		<p>Todos los derechos reservados &copy; 2017</p>
+		<p>Todos los derechos reservados &copy; <span class="negrita">2017</span></p>
 	</footer>
   <!--TODO agregar codigo html</!-->
   <!--Cuerpo del sitio</!-->
