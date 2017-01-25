@@ -24,14 +24,30 @@ class Usuario{
                $usuario->nombre = $r['nombre'];
                $usuario->apellidos = $r['apellidos'];
                $usuario->email = $r['email'];
-               return $usuario;
+               
+               $datos = [
+                   'data' => [
+                       'login'=> true,
+                       'usuario'=> $usuario->datos
+                   ]
+               ];
+
             } else {
-                return null;
-            }           
+                    $datos = [
+                   'data' => [
+                       'login'=> false
+                  ]
+               ];
+            }
         } else {
-            return false;
+             $datos = [
+                   'data' => [
+                       'login'=> 'fail'
+                 ]
+            ];
         }
-    }
+     return json_encode($datos);
+    }  
 
     public function __get($campo){
         if(array_key_exists($campo, $this->$datos))
@@ -42,5 +58,5 @@ class Usuario{
         $this->datos[$campo] = $valor;
     }
 }
-$u = Usuario::login('bidkar', '123');
-var_dump($u);
+$u = Usuario::login('german', '123');
+echo $u;

@@ -9,7 +9,7 @@ create table usuarios(
     apellidos varchar(50) not null comment 'apellidos paterno y materno',
     email varchar(200) not null default 'sin@correo.com' comment 'correo electronico',
     primary key (id),
-    index unique idu_username (username)
+    unique idu_username (username)
 ) engine = MyISAM;
 insert into usuarios(username, password, nombre, apellidos, email)
 values('german', '202cb962ac59075b964b07152d234b70','Jesus German', 'Alvarez Montoya', 'germanalvarezmontoya@gmail.com')
