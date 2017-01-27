@@ -21,7 +21,7 @@
 	<!-- main>figure>img[src="#" alt="Text alt" width=960 height=320]+legend{Texto de la imagen} -->
 	<main id="contenido">
 		<div id="login-form">
-            <form action="#">
+            <form>
                <div class="control">
                     <label for="txtusuario" class="negrita">Usuario</label> <br>
                    <input type="text" name="txtusuario" id="txtusuario" class="input">
@@ -35,7 +35,7 @@
                 </label>
                
                 	<!--  <button type="submit">Iniciar sesion</button> -->
-                   <button onclick="login()">Iniciar sesion</button>
+                   <button id ="login-button">Iniciar sesion</button>
             </form>
               <a href="lost.html" class="text-center block">¿Olvido su Contraseña?</a>
         </div>
@@ -48,5 +48,7 @@
   <!--TODO agregar codigo html</!-->
   <!--Cuerpo del sitio</!-->
     <script src="js/app.js"></script>
+    <script src="js/jquery-3.1.1"></script>
+
 </body>
 </html>
