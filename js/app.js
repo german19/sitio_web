@@ -3,7 +3,7 @@
 //Console.log('Hola desde la consola de javascript');
 
 function login(usuario, passwd){
- $.post("../login.php",{ txtusuario:usuario, txtpassword:passwd }, function(data){
+ $.post("login.php",{ txtusuario:usuario, txtpassword:passwd }, function(data){
      return data;
  });
 }
