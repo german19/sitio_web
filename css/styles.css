@@ -15,54 +15,66 @@ body{
 #encabezado{
     background-color: #93485E;
     padding: 10px;
-    color: #000;
+    color: #ffffff;
+
     /*color: rgb(255, 255, 0);
     color: rgb(255, 255, 0,.5);
     color: white;*/
 }
 /*Tipo close*/
-#login-form{
+#login-form {
     width: 370px;
     margin: 20px auto;
     padding: 15px;
-
-    background-color: white;
-    border:  1px solid lightgray;
-    border-radius: 5px;
-    box-shadow: 0 0 10px lightgray;
-
-    
-
     /*
-    margin: 10px; Aplica los 4 lados
-    margin: 10px 15px; Aplica arriva y abajo 10 px  izq y der 15 px
-    margin: 5px 10px 15px;   Aplica 5 arriva 10 izq y der y 15 abajo
-    margin 1px 2px 3px 
-
-    
+    margin: 10px; aplica a los 4 lados
+    margin: 10px 15px; aplica arriba y abajo 10px, izquierda y derecha 15px
+    margin: 5px 10px 15px; aplica 5px arriba, 10px izquierda y derecha, 15px abajo
+    margin: 1px 2px 3px 4px; aplica 1px arriba, 2px derecha, 3px abajo, 4px izquierda
     */
 }
 
-#login-form .input{
-width: 98%;
-font-size: 1em;
+#profile-form {
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
 }
-#login-form .control
-{
+#profile-form * {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.form {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+#login-form .input {
+    width: 98%;
+    font-size: 1em;
+}
+
+#login-form .control {
     margin-bottom: 20px;
 }
 
-#login-form .control label{
+#login-form .control label {
     font-size: 1.2em;
-
 }
-#login-form button{
-border: 1px solid lightgray;
-border-radius: 5px;
-padding:  5px 10px;
-font-size: 1em;
-width: 100%;
-margin: 10px 0;
+
+#login-form button {
+    /* shorthand */
+    border: 1px solid lightgray;
+    /* border-width: 1px;
+       border-style: solid;
+       border-color: lightgray;*/
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .negrita{
@@ -90,8 +102,5 @@ margin: 10px 0;
 }
 .oculto{
     display: none;
-}
-#profile-form{
-    
 }
 
